@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Image Downloader",
+  "version": "1.1",
+  "description": "Downloads images from a specific container on the page.",
+  "permissions": [
+    "activeTab",
+    "downloads",
+    "scripting"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/icon16.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    }
+  }
+}
